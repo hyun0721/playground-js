@@ -12,5 +12,17 @@
  */
 
 export default function(){
-    
+
+    let inputArray = [6, 5, 11];
+    let minNumber = Number.MAX_SAFE_INTEGER;
+
+
+    for(let target of inputArray){
+        if(target <= minNumber){
+            minNumber = target;
+        }
+    }
+
+    return minNumber;
+
 }
