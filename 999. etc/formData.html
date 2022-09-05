@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .content-1{
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            FormData Excercise ...
+        </h1>
+        
+        <div>
+            <form id="formMain" action="">
+                <div style="display: inline-flex; flex-direction: column;">
+                    <p class="content-1"> Form Area ...</p>
+                    <input class="content-1" name="txtSample" type="text" value="Smaple Text...">
+                    <select class="content-1" name="selectBox" id="selectBox">
+                        <option value="normal">보통</option>
+                        <option value="Hard">어려움</option>
+                        <option value="Hell">매우 어려움</option>
+                    </select>
+                    <label for="chkBox1">Check Box(1) : 
+                        <input type="checkbox" id="chkBox1" name="chkBox1" value="Y" checked>
+                    </label>
+                    <label for="chkBox2">Check Box(2) : 
+                        <input type="checkbox" id="chkBox2" name="chkBox2" value="Y">
+                    </label>
+                </div>
+            </form>
+            
+            <button id="btnPrint">Print FormData Info</button>
+        </div>
+    </div>
+
+    <script src="./ex_formData.js"></script>
+</body>
+</html>
