@@ -9,7 +9,7 @@
             "type": "pwa-chrome",
             "request": "attach",
             "port": 9222,
-            "urlFilter": "http://localhost:8080/*"
+            "urlFilter": "http://localhost:8180/*"
         }
     ]
 }
