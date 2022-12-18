@@ -12,11 +12,11 @@ import tenRotationSys from "./1. basic/tenRotationSys.js";
 import ex_promise   from "./999. etc/ex_promise.js";
 import { SessionUtil, LocalUtil } from "./999. etc/ex_userStorage.js"
 import ex_function from "./999. etc/ex_function.js";
+import ex_duplicate from "./999. etc/ex_duplicate.js";
 
 
 (function () {
     console.log(" >>>>  main.js  <<<< ");
 
-    tenRotationSys({ today: 7, carNumber: [25, 23, 11, 47, 53, 17, 33] });
-
+    ex_duplicate();
 })();

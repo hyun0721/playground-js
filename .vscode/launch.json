@@ -10,6 +10,17 @@
             "request": "attach",
             "port": 9222,
             "urlFilter": "http://localhost:8180/*"
+        },
+        {
+            "name": "[Launch] Chrome",
+            "type": "pwa-chrome",
+            "request": "launch",
+            "url": "http://localhost:8180/index.html",
+            // "url": "http://localhost:8180/index.html#/",
+            // "webRoot": "${workspaceFolder}/src",
+            // "sourceMapPathOverrides": {
+            //     "webpack:///src/*": "${webRoot}/*"
+            // }
         }
     ]
 }
