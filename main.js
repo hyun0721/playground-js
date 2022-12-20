@@ -13,10 +13,12 @@ import ex_promise   from "./999. etc/ex_promise.js";
 import { SessionUtil, LocalUtil } from "./999. etc/ex_userStorage.js"
 import ex_function from "./999. etc/ex_function.js";
 import ex_duplicate from "./999. etc/ex_duplicate.js";
+import ex_sort from "./999. etc/ex_sort.js";
 
 
 (function () {
     console.log(" >>>>  main.js  <<<< ");
 
-    ex_duplicate();
+    // ex_duplicate();
+    ex_sort();
 })();
