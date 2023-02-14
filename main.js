@@ -20,6 +20,7 @@ import ex_sort                      from "./999. etc/ex_sort.js";
 import ex_arrayMax                  from "./999. etc/ex_arrayMax.js";
 import ex_aync                      from "./999. etc/ex_aync.js";
 import ex_deepCopy                  from "./999. etc/ex_deepCopy.js";
+import ex_Intl                      from "./999. etc/ex_Intl.js";
 
 
 
@@ -29,6 +30,6 @@ import ex_deepCopy                  from "./999. etc/ex_deepCopy.js";
     // dwarf();
     
     // ex_aync();
-    ex_deepCopy();
     
+    ex_Intl();
 })();
