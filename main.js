@@ -23,6 +23,8 @@ import ex_deepCopy                  from "./999. etc/ex_deepCopy.js";
 import ex_Intl                      from "./999. etc/ex_Intl.js";
 
 
+import example from "./900. programers_L2/example.js";
+import example_1 from "./900. programers_L2/example_1.js";
 
 (function () {
     console.log(" >>>>  main.js  <<<< ");
@@ -31,5 +33,9 @@ import ex_Intl                      from "./999. etc/ex_Intl.js";
     
     // ex_aync();
     
-    ex_Intl();
+    // ex_Intl();
+    
+    
+    console.log(`Answer ... ${example_1('3people Unfollowed    Me   ')}`);
+
 })();
