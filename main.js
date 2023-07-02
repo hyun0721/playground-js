@@ -21,21 +21,38 @@ import ex_arrayMax                  from "./999. etc/ex_arrayMax.js";
 import ex_aync                      from "./999. etc/ex_aync.js";
 import ex_deepCopy                  from "./999. etc/ex_deepCopy.js";
 import ex_Intl                      from "./999. etc/ex_Intl.js";
+import ex_args                      from "./999. etc/ex_args.js";
 
 
-import example from "./900. programers_L2/example.js";
-import example_1 from "./900. programers_L2/example_1.js";
+
+
+
+
+
+
+
+
+
+
+import { GridArguments, CustomGrid }               from "./999. etc/module.js";
 
 (function () {
-    console.log(" >>>>  main.js  <<<< ");
 
-    // dwarf();
-    
-    // ex_aync();
-    
-    // ex_Intl();
-    
-    
-    console.log(`Answer ... ${example_1('3people Unfollowed    Me   ')}`);
+
+    let myGrid = new CustomGrid({
+        wid
+    })
+
+
+
+
+    // let myGrid = new CustomGrid({
+    //     width: '100%',
+    //     height: '50%',
+    //     resize: false,
+    //     scroll: true
+    // });
+
+
 
 })();
