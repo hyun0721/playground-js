@@ -24,35 +24,11 @@ import ex_Intl                      from "./999. etc/ex_Intl.js";
 import ex_args                      from "./999. etc/ex_args.js";
 
 
-
-
-
-
-
-
-
-
-
-
 import { GridArguments, CustomGrid }               from "./999. etc/module.js";
+import ex_worker from "./999. etc/ex_worker.js";
 
 (function () {
 
-
-    let myGrid = new CustomGrid({
-        wid
-    })
-
-
-
-
-    // let myGrid = new CustomGrid({
-    //     width: '100%',
-    //     height: '50%',
-    //     resize: false,
-    //     scroll: true
-    // });
-
-
+    ex_worker();
 
 })();
