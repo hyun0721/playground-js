@@ -23,12 +23,13 @@ import ex_deepCopy                  from "./999. etc/ex_deepCopy.js";
 import ex_Intl                      from "./999. etc/ex_Intl.js";
 import ex_args                      from "./999. etc/ex_args.js";
 
-
 import { GridArguments, CustomGrid }               from "./999. etc/module.js";
 import ex_worker from "./999. etc/ex_worker.js";
+import ex_exception from "./999. etc/ex_exception.js";
+
 
 (function () {
 
-    ex_worker();
+    ex_exception();
 
 })();
