@@ -42,16 +42,6 @@ class SaveError extends BaseError {
 }
 
 
-/**
- * 정제된 데이터를 저장
- * 
- * 1. 유효성 검사
- *  1) 자료형 검사 : 자료유형에 알맞은 값을 갖어야 함.
- *  2) 품절 여부 검사 : 저장 품목 중 품절 상품이 있으면 안됨.
- * 
- * 2. 저장
- * 
- */
 export default () => {
 
     /**
@@ -60,9 +50,6 @@ export default () => {
      * @param {*} rowData
      */
     const Validation = (rowData) => {
-
-        // 1. 자료형에 대한 유효성 검사
-        // 2. 로직상의 유효성 검사 (품절 여부 등)
 
         if(!(DEFAULT_REGEXP_ALPHABET).test(rowData.product)){
             throw new FormatError(`자료유형 오류 : 영문자(알파벳)`, rowData.seq, rowData.product );
