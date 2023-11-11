@@ -44,11 +44,7 @@ class SaveError extends BaseError {
 
 export default () => {
 
-    /**
-     * 1. 유효성 검사
-     * 
-     * @param {*} rowData
-     */
+    /** 유효성 검사 부 */
     const Validation = (rowData) => {
 
         if(!(DEFAULT_REGEXP_ALPHABET).test(rowData.product)){
@@ -70,9 +66,7 @@ export default () => {
 
     }
 
-    /**
-     * 2. 데이터 전송 부
-     */
+    /** 데이터 전송 부 */
     const SendData = (sendData) => {
         
         const DATA_SAVE_API = 'http://test.com';
@@ -92,6 +86,7 @@ export default () => {
 
     }
 
+    /** '저장' 로직 */
     const SaveData = (sourceData) => {
 
         /** 1. 유효성 검사 */
