@@ -26,10 +26,11 @@ import ex_args                      from "./999. etc/ex_args.js";
 import { GridArguments, CustomGrid }               from "./999. etc/module.js";
 import ex_worker from "./999. etc/ex_worker.js";
 import ex_exception from "./999. etc/ex_exception.js";
+import ex_jsdoc from "./999. etc/ex_jsdoc.js";
 
 
 (function () {
 
-    ex_exception();
+    ex_jsdoc();
 
 })();
