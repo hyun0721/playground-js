@@ -27,10 +27,12 @@ import { GridArguments, CustomGrid }               from "./999. etc/module.js";
 import ex_worker from "./999. etc/ex_worker.js";
 import ex_exception from "./999. etc/ex_exception.js";
 import ex_jsdoc from "./999. etc/ex_jsdoc.js";
+import ex_queryString from "./999. etc/ex_queryString.js";
+
 
 
 (function () {
 
-    ex_jsdoc();
+    ex_queryString();
 
 })();

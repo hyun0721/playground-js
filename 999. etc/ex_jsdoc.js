@@ -11,18 +11,43 @@ export default () => {
     //@ts-ignore
     number = true;
 
-    
+
 //#region  :: Enum
 
-    /** @enum {number} */
+    /** @enum {string} */
     const LOG_LEVEL = {
-        DEBUG : 0,
-        ERROR : 1,
-        WARNING : 2
+        DEBUG    : "DEBUG",
+        ERROR    : "ERROR",  
+        WARNING  : "WARNING"
     }
 
-    /** @type {string} */
-    // let temp = LOG_LEVEL.DEBUG;
+    /** @type {LOG_LEVEL} */
+    const temp = LOG_LEVEL.DEBUG;
+
+    /**
+     * 이력 남기기.
+     * 
+     * @param   {LOG_LEVEL}   logLevel 로그 수준
+     * @param   {String}      text 내용
+     * @returns {String}
+     */
+    function History(logLevel, text) {
+        const fullText = `[${logLevel}] ${text}`;
+
+        console.log(fullText);
+
+        return fullText;
+    }
+
+    /** @type {(logLevel:LOG_LEVEL, text:String) => String} */
+    const Arrow_History = (logLevel, text) => {
+        const fullText = `[${logLevel}] ${text}`;
+
+        console.log(fullText);
+
+        return fullText;
+    }
+
 
 //#endregion
 
@@ -40,12 +65,12 @@ export default () => {
      * @property {String} product
      * @property {Number} price
      * @property {*} expireDt
-     * @property {*} soldOut
+     * @property {boolean} soldOut
      */
 
     /**
      * 저장하는 함수
-     * 
+     *
      * @param {ISaveData} inputData 저장하고자 하는 값
      * @returns {boolean}
      */
@@ -56,13 +81,7 @@ export default () => {
         return true;
     }
 
-    /** @type {(inputData:ISaveData) => boolean} */
-    const SaveData1 = (inputData) => {
-        
-        /** Save Logic */
 
-        return true;
-    }
 
     /** @type {ISaveData} */
     /** @type {ISaveRowData[]} */
